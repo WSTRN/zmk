@@ -679,6 +679,10 @@ config FPU
 config ZMK_WPM
     bool "Calculate WPM"
 
+config ZMK_LINEAR_ACTUATOR
+    bool "Enable Linear Actuator support"
+    select PWM
+
 config ZMK_KEYMAP_SENSORS
     bool "Enable Keymap Sensors support"
     default y
